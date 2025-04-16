@@ -1,0 +1,1 @@
+# Run this script to set up the devops-lab environment on the host machine.
