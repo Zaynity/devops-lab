@@ -24,6 +24,6 @@ spec:
       containers:
         - name: astro-docs
           image: docker.io/library/astro-docs-local:latest
-          ImagePullPolicy: IfNotPresent
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 4321
