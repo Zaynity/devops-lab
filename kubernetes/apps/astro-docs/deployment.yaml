@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: astro-docs
-          image: docker.io/library/astro-docs:latest
+          image: astro-docs-local:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 4321
