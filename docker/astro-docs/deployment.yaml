@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: astro-docs
+  labels:
+    app: astro-docs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: astro-docs
+  template:
+    metadata:
+      labels:
+        app: astro-docs
+    spec:
+      containers:
+        - name: astro-docs
+          image: astro-docs:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 4321
