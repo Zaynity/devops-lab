@@ -4,6 +4,7 @@ metadata:
   name: astro-docs
   namespace: docs
 spec:
+  type: NodePort
   selector:
     app: astro-docs
   ports:
