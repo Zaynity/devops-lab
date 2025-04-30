@@ -1,19 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: astro-docs
+  name: astro-docs-ingress
   namespace: docs
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: docs
+    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-    - host: docs.devops-lab.nip.io
+    - host: astro.devops-lab.local
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: astro-docs
+                name: astro-docs-service
                 port:
                   number: 80
