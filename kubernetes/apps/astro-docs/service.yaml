@@ -9,6 +9,6 @@ spec:
     app: astro-docs
   ports:
     - protocol: TCP
-      port: 80
+      port: 8080
       targetPort: 4321
       nodePort: 30080
