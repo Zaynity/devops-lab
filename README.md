@@ -2,7 +2,7 @@
 
 Welcome to my personal DevOps lab repository. This space is designed for experimentation and learning around modern DevOps tooling, infrastructure automation, and CI/CD practices.
 
-This project is evolving over time as I integrate and test different technologies and workflows. For now, the setup includes a basic Kubernetes cluster with a local Docker registry and a documentation website.
+This project is evolving over time as I integrate and test different technologies and workflows.
 
 [Documentation](http://178.62.3.69:30080/)
 
