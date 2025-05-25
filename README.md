@@ -34,23 +34,9 @@ This project is evolving over time as I integrate and test different technologie
 
 The environment is currently hosted on a [DigitalOcean](https://www.digitalocean.com) droplet running **Ubuntu 24.10 x64**.
 
-### Architecture
-
-Local Dev Machine
-|
-v
-[ GitHub Actions ] --> [ Local Docker Registry ] --> [ K3s Cluster ]
-|
-v
-[Astro Starlight Docs Site]
-
----
-
 ## 🛠️ How to Use
 
-### Clone the Repo
-
+Import the /scripts/setup.sh on the server and run it with the following command
 ```bash
-# Import the /scripts/setup.sh on the server and run it with
 ./setup.sh replace_by_github_token
 ```
