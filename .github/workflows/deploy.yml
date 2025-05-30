@@ -45,4 +45,7 @@ jobs:
           
           echo "Deploying to k3s"
           kubectl apply -f temp-deployment.yaml -n ${{ secrets.ASTRO_DOCS_NAMESPACE }}
+
+          echo "Remove temporary file"
+          rm temp-deployment.yaml
         EOF
