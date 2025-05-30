@@ -24,6 +24,6 @@ spec:
       containers:
         - name: astro-docs
           image: localhost:5000/astro-docs:latest
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 4321
