@@ -39,4 +39,10 @@ jobs:
 
           echo "Pushing to local registry"
           docker push localhost:5000/astro-docs:${{ steps.tag.outputs.TAG }}
+
+          echo "Updating deployment tag in YAML"
+          sed "s|image: localhost:5000/astro-docs:.*|image: localhost:5000/astro-docs:${{ steps.tag.outputs.TAG }}|" ../kubernetes/apps/astro-docs/deployment.yaml > temp-deployment.yaml
+          
+          echo "Deploying to k3s"
+          kubectl apply -f temp-deployment.yaml -n ${{ secrets.ASTRO_DOCS_NAMESPACE }}
         EOF
