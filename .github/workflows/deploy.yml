@@ -1,0 +1,42 @@
+name: Deploy Astro Docs with Version Tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set build tag (timestamp)
+      id: tag
+      run: |
+        echo "TAG=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+    - name: Setup SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to droplet
+      run: |
+        ssh ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << EOF
+          set -e
+          cd /root/git/devops-lab
+
+          echo "Pulling changes"
+          git pull origin main
+
+          echo "Building image"
+          docker build -t localhost:5000/astro-docs:${{ steps.tag.outputs.TAG }} .
+
+          echo "Pushing to local registry"
+          docker push localhost:5000/astro-docs:${{ steps.tag.outputs.TAG }}
+        EOF
