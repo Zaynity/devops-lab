@@ -13,8 +13,9 @@ export default defineConfig({
 					label: 'Docs',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'GitHub Actions', slug: 'infra/github_actions' },
+						{ label: 'General', slug: 'infra/general' },
 						{ label: 'Kubernetes', slug: 'infra/kubernetes' },
+						{ label: 'GitHub Actions', slug: 'infra/github_actions' },
 					],
 				},
 				{
