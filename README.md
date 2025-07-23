@@ -125,6 +125,15 @@ This project demonstrates a **complete, production-ready DevOps infrastructure**
 
 **Open to DevOps opportunities**
 
-- 📧 **Email**: [mateo.miossec@pm.me](mailto:mateo.miossec@pm.me)
-- 💼 **LinkedIn**: [mateo-miossec](https://www.linkedin.com/in/mateo-miossec/)
-- 🐙 **GitHub**: [@Zaynity](https://github.com/Zaynity)
+[![Email](https://img.shields.io/badge/Email-mateo.miossec%40pm.me-purple?style=flat-square&logo=proton)](mailto:mateo.miossec@pm.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mateo--miossec-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/mateo-miossec/)
+[![GitHub](https://img.shields.io/badge/GitHub-Zaynity-black?style=flat-square&logo=github)](https://github.com/Zaynity)
+
+---
+
+<div align="center">
+
+
+**⭐ Star this repository if you find it helpful!**
+
+</div>
