@@ -93,17 +93,17 @@ This project demonstrates a **complete, production-ready DevOps infrastructure**
 
 ## **Roadmap & Future Enhancements**
 
-### **Phase 1: Infrastructure as Code** 🚧
+### **Phase 1: Infrastructure as Code**
 - [ ] **Terraform Integration** - DigitalOcean resource management
 - [ ] **Ansible Playbooks** - Automated server configuration
 - [ ] **Multi-environment** support (dev/staging/prod)
 
-### **Phase 2: Advanced Monitoring** 📊
+### **Phase 2: Advanced Monitoring**
 - [ ] **Custom Grafana Dashboards** - Application-specific metrics
 - [ ] **Log Aggregation** - ELK/Loki stack integration
 - [ ] **Performance Testing** - Automated load testing
 
-### **Phase 3: Security & Compliance** 🔒
+### **Phase 3: Security & Compliance**
 - [ ] **Security Scanning** - Vulnerability assessments
 - [ ] **Compliance Monitoring** - Policy enforcement
 - [ ] **Backup & Recovery** - Disaster recovery procedures
