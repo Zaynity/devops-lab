@@ -120,3 +120,11 @@ This project demonstrates a **complete, production-ready DevOps infrastructure**
 
 
 </div>
+
+## **Connect & Collaborate**
+
+**Open to DevOps opportunities**
+
+- 📧 **Email**: [mateo.miossec@pm.me](mailto:mateo.miossec@pm.me)
+- 💼 **LinkedIn**: [mateo-miossec](https://www.linkedin.com/in/mateo-miossec/)
+- 🐙 **GitHub**: [@Zaynity](https://github.com/Zaynity)
