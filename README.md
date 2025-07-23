@@ -1,42 +1,122 @@
+<!-- To view the README during development: CRTL + K > Then type V -->
 # DevOps Lab Environment
 
-Welcome to my personal DevOps lab repository. This space is designed for experimentation and learning around modern DevOps tooling, infrastructure automation, and CI/CD practices.
+> **A modern DevOps laboratory showcasing automation, containerization, and infrastructure best practices**
 
-This project is evolving over time as I integrate and test different technologies and workflows.
+![Infrastructure](https://img.shields.io/badge/Infrastructure-Kubernetes-blue?style=flat-square&logo=kubernetes)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green?style=flat-square&logo=github-actions)](https://github.com/Zaynity/devops-lab/actions)
+[![Documentation](https://img.shields.io/badge/Documentation-Live-orange?style=flat-square)](http://178.62.3.69:30080/)
+[![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus%2BGrafana-red?style=flat-square&logo=prometheus)](http://178.62.3.69:30854)
+[![Cloud](https://img.shields.io/badge/Cloud-DigitalOcean-0080ff?style=flat-square&logo=digitalocean)](https://www.digitalocean.com/products/droplets)
 
-[Documentation](http://178.62.3.69:30080/)
+
+## **Project Overview**
+
+This project demonstrates a **complete, production-ready DevOps infrastructure** built as a learning laboratory and professional showcase. Running on a cost-optimized DigitalOcean droplet (~$30/month), it showcases modern DevOps practices, automation, and monitoring in a real-world environment.
+
+**🔗 [Live Documentation](http://178.62.3.69:30080/)** | **📊 [Monitoring Dashboard](http://178.62.3.69:30854)** | **[⚙️ Browse Code](https://github.com/Zaynity/devops-lab)**
+
+> **🔑 Grafana Public Access:** Username: `public` | Password: `c23Xta5%SZ9L$v$f`
+
+
+## **Infrastructure Architecture**
+
+![Infrastructure Diagram](./images/infrastructure_diagram.png)
+
+### **Architecture Components:**
+- **DigitalOcean Droplet** - Ubuntu 24.10 cloud infrastructure
+- **K3s Cluster** - Lightweight Kubernetes for single-node deployment
+- **Docker Registry** - Private image repository for CI/CD
+- **Monitoring Stack** - Prometheus + Grafana + Node Exporter
+- **Documentation Site** - Astro Starlight with automated deployment
+
+
+## **CI/CD Pipeline**
+
+![CI/CD Pipeline](./images/astro-docs_pipeline_CI-CD.png)
+
+### **Automated Workflow:**
+1. **Developer Push** - Code changes to `main` branch
+2. **GitHub Actions** - Automated build process
+3. **Docker Build** - Astro application containerization
+4. **Image Tagging** - Timestamp-based versioning (`20240521-1830`)
+5. **Registry Push** - Upload to private Docker registry
+6. **K3s Deployment** - Automated image update and deploy
+
+
+## **Technology Stack**
+
+<table>
+<tr>
+<td width="50%">
+
+**🏗️ Infrastructure & Orchestration**
+- **DigitalOcean** - Cloud hosting platform
+- **Ubuntu 24.10** - Operating system
+- **K3s** - Lightweight Kubernetes distribution  
+- **Docker** - Containerization platform
+- **Private Registry** - Local image management
+
+</td>
+<td width="50%">
+
+**Monitoring & Observability**
+- **Prometheus** - Metrics collection & alerting
+- **Grafana** - Visualization & dashboards
+- **Node Exporter** - System metrics
+
+</td>
+</tr>
+<tr>
+<td>
+
+**🔄 CI/CD & Automation**
+- **GitHub Actions** - CI/CD pipelines
+- **Timestamp Tagging** - Version management
+- **kubectl** - Kubernetes deployments
+- **Infrastructure as Code** - YAML manifests
+
+</td>
+<td>
+
+**📚 Documentation & Frontend**
+- **Astro** - Modern static site generator
+- **Starlight** - Documentation framework
+- **Responsive Design** - Mobile-friendly UI
+- **Live Updates** - Automated content deployment
+- **NGINX** - Web server used in the image
+
+</td>
+</tr>
+</table>
+
+
+## **Roadmap & Future Enhancements**
+
+### **Phase 1: Infrastructure as Code** 🚧
+- [ ] **Terraform Integration** - DigitalOcean resource management
+- [ ] **Ansible Playbooks** - Automated server configuration
+- [ ] **Multi-environment** support (dev/staging/prod)
+
+### **Phase 2: Advanced Monitoring** 📊
+- [ ] **Custom Grafana Dashboards** - Application-specific metrics
+- [ ] **Log Aggregation** - ELK/Loki stack integration
+- [ ] **Performance Testing** - Automated load testing
+
+### **Phase 3: Security & Compliance** 🔒
+- [ ] **Security Scanning** - Vulnerability assessments
+- [ ] **Compliance Monitoring** - Policy enforcement
+- [ ] **Backup & Recovery** - Disaster recovery procedures
 
 ---
 
-## 🔧 Current Stack
+<div align="center">
 
-| Tool / Tech              | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| **Docker**               | Containerization engine used to build and run images locally.               |
-| **K3s**                  | Lightweight Kubernetes distribution used for the cluster setup.             |
-| **Docker Registry**      | Local Docker registry used to push/pull container images within the cluster.|
-| **Astro Starlight**      | Template used to deploy a documentation site in the K3s cluster.            |
-| **GitHub Actions**       | CI/CD pipeline to automate build and deployment.                            |
-| **DigitalOcean Droplet** | Hosting environment for the lab (Ubuntu 24.10 x64).                         |
+### **🌟 Explore the Live Environment**
 
----
+**[📊 View Monitoring](http://178.62.3.69:30854)** | **[📚 Read Documentation](http://178.62.3.69:30080)** | **[⚙️ Browse Code](https://github.com/Zaynity/devops-lab)**
 
-## 📌 Goals
+> **🔑 Grafana Public Access:** Username: `public` | Password: `c23Xta5%SZ9L$v$f`
 
-- Build a robust and modular DevOps lab environment.
-- Test CI/CD practices with real-world tools.
-- Deploy and manage applications using infrastructure-as-code.
-- Document the setup and findings with Astro Starlight.
 
----
-
-## 🌐 Deployment Overview
-
-The environment is currently hosted on a [DigitalOcean](https://www.digitalocean.com) droplet running **Ubuntu 24.10 x64**.
-
-## 🛠️ How to Use
-
-Import the /scripts/setup.sh on the server and run it with the following command
-```bash
-./setup.sh replace_by_github_token
-```
+</div>
