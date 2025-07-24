@@ -36,10 +36,10 @@ This project demonstrates a **complete, production-ready DevOps infrastructure**
 ![CI/CD Pipeline](./images/astro-docs_pipeline_CI-CD.png)
 
 ### **Automated Workflow:**
-1. **Developer Push** - Code changes to `main` branch
+1. **Developer Push** - Code changes to `main` branch in the "astro-docs" directory
 2. **GitHub Actions** - Automated build process
 3. **Docker Build** - Astro application containerization
-4. **Image Tagging** - Timestamp-based versioning (`20240521-1830`)
+4. **Image Tagging** - Timestamp-based versioning (`20250124-143052` format YYYYMMDD-HHMMSS)
 5. **Registry Push** - Upload to private Docker registry
 6. **K3s Deployment** - Automated image update and deploy
 
@@ -60,7 +60,7 @@ This project demonstrates a **complete, production-ready DevOps infrastructure**
 </td>
 <td width="50%">
 
-**Monitoring & Observability**
+**📊 Monitoring & Observability**
 - **Prometheus** - Metrics collection & alerting
 - **Grafana** - Visualization & dashboards
 - **Node Exporter** - System metrics
