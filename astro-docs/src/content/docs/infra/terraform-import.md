@@ -179,7 +179,7 @@ resource "digitalocean_droplet" "do_droplet" {
 
 Create `.gitignore` to protect sensitive files:
 
-```gitignore
+```bash
 # Terraform files to exclude from version control
 **/.terraform/*
 *.tfstate
