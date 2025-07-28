@@ -16,6 +16,7 @@ export default defineConfig({
 						{ label: 'General', slug: 'infra/general' },
 						{ label: 'Kubernetes', slug: 'infra/kubernetes' },
 						{ label: 'GitHub Actions', slug: 'infra/github_actions' },
+						{ label: 'Terraform Import', slug: 'infra/terraform-import' },
 					],
 				},
 				{
