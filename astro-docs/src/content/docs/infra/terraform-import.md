@@ -111,7 +111,7 @@ sudo apt update
 sudo apt-get install terraform
 ```
 
-### Verify Installation
+### Verify Terraform Installation
 
 ```bash
 terraform version
