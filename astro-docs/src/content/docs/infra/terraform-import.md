@@ -323,7 +323,6 @@ terraform plan -var "do_token=${DO_TOKEN}"
 2. **Use .gitignore**: Protect state files and sensitive configurations
 3. **Limit token scope**: Create tokens with minimal required permissions
 4. **Regular rotation**: Rotate API tokens periodically
-5. **State file security**: Consider remote state storage for production environments
 
 ---
 
