@@ -4,10 +4,11 @@
 > **A modern DevOps laboratory showcasing automation, containerization, and infrastructure best practices**
 
 ![Infrastructure](https://img.shields.io/badge/Infrastructure-Kubernetes-blue?style=flat-square&logo=kubernetes)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green?style=flat-square&logo=github-actions)](https://github.com/Zaynity/devops-lab/actions)
-[![Documentation](https://img.shields.io/badge/Documentation-Live-orange?style=flat-square)](http://178.62.3.69:30080/)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black?style=flat-square&logo=github-actions)](https://github.com/Zaynity/devops-lab/actions)
+[![Documentation](https://img.shields.io/badge/Documentation-AstroStarlight-orange?style=flat-square)](http://178.62.3.69:30080/)
 [![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus%2BGrafana-red?style=flat-square&logo=prometheus)](http://178.62.3.69:30854)
 [![Cloud](https://img.shields.io/badge/Cloud-DigitalOcean-0080ff?style=flat-square&logo=digitalocean)](https://www.digitalocean.com/products/droplets)
+[![IaC](https://img.shields.io/badge/IaC-Terraform-623CE4?style=flat-square&logo=terraform)](https://github.com/Zaynity/devops-lab/tree/main/terraform)
 
 
 ## **Project Overview**
